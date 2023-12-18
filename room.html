@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="オーシャンリゾートホテルの施設をご紹介。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【オーシャンリゾートホテル】客室のご紹介</title>
+
+    <!-- CSS -->
+    <!-- ～リセット～ -->
+    <link rel="stylesheet" link="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+     rel="stylesheet"
+     type="text/css"
+     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+
+<!-- 共通部分 -->
+<body>
+    <header class="header-wrapper">
+        <a href="index.html">
+            <img class="logo" src="image/logo.png" alt="OCEAN RRESORT HOTEL">
+        </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホームへ</a></li>
+                    <li><a href="room.html">客室</a></li>
+                    <li><a href="restaurant.html">レストラン</a></li>
+                    <li><a href="contact.html">お問い合わせ・アクセス</a></li>
+                    <li><a href="reservation.html">ご予約はこちら</a></li>
+                </ul>
+             </nav> <!-- main-nav 終了 -->
+            
+    </header><!-- header-wrapper 終了-->
+
+    <!-- メインコンテンツ -->
+    <div class="text-wrapper">
+        <h1>客室のご案内</h1>
+        <span class="sub">Room</span>
+        <p>ハワイのきれいな海をご覧になりながらお部屋で過ごせます。リラックスした雰囲気なので日々の疲れを癒せます。</p>
+    </div>
+
+
+    <h2>部屋タイプ一覧</h2>
+    <section >
+        <div class="room-wrapper">
+            <div class="room-container">
+                <img src="image/room1.jpg" alt="スタンダード:シングルベッド">
+                <p> ~スタンダード~<br>
+                シングル:ベッド2台</p>
+                <p>落ち着きと寛ぎの空間が広がるスタンダードタイプ。隣の部屋と内側のドアでつながっているコネクティングルームは、3名以上のご家族、グループのお客様へおすすめのお部屋です。</p>
+            </div><!-- room-container 終了-->
+
+            <div class="room-container">
+                <img src="image/room2.jpg" alt="スタンダード:ダブルベッド">
+                <p>~スタンダード~<br>
+                    ダブル:ベッド１台</p>
+                    <p>ゆったりとした広さの42m2の室内と潮風が心地良い約10m2のワイドバルコニー。時間とともに移り変わる美しい景色を眺めながら優雅なひとときをお過ごしください。</p>
+            </div><!-- room-container 終了-->
+         </div><!-- room-wrapper -->
+         
+        <div class="suit-container" >
+            <div class="slider">
+                <div><img src="image/room3.jpg" alt="スタンダード:ダブルベッド"></div>
+                <div><img src="image/room5.jpg" alt="スタンダード:ダブルベッド"></div>
+
+            </div>
+            <p>~スイートルーム~<br>
+                ダブル:ベッド１台</p>
+                <p>都会の喧騒から離れ、非日常感を満喫できる「スイートルーム」。
+                    プライベートテラスの屋外ではオーシャンビューでゲストを別世界へと導きます。
+                    「スイートルーム」でしか味わうことのできない至福のひとときをお楽しみください。</p>
+        </div><!-- room-container 終了-->
+    </section>
+    
+<footer>
+    <p><small>&copy;OCEAN RESORT HOTEL</small></p>
+</footer>
+
+</body>
+<!-- スライダー用 -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //１個目のslider
+        $(".slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade:true,
+            dots:true,  
+        });
+        
+      </script>

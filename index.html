@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="オーシャンリゾートホテルの施設をご紹介。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>オーシャンリゾートホテル</title>
+
+    <!-- CSS -->
+    <!-- ～リセット～ -->
+    <link rel="stylesheet" link="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+     rel="stylesheet"
+     type="text/css"
+     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+</head>
+
+<!-- 共通部分 -->
+<body>
+    <header class="header-wrapper">
+        <a href="index.html">
+            <img class="logo" src="image/logo.png" alt="OCEAN RRESORT HOTEL">
+        </a>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">ホームへ</a></li>
+                <li><a href="room.html">客室</a></li>
+                <li><a href="restaurant.html">レストラン</a></li>
+                <li><a href="contact.html">お問い合わせ・アクセス</a></li>
+                <li><a href="reservation.html">ご予約はこちら</a></li>
+            </ul>
+        </nav> <!-- main-nav 終了 -->
+            
+    </header><!-- header-wrapper 終了-->
+
+    <div class="slider" >
+        <div>
+            <img src="image/main.jpg">
+        </div>
+        <div>
+            <img src="image/hotel1.jpg">
+        </div>
+        <div>
+            <img src="image/hotel2.jpg">
+        </div>
+        <div>
+            <img src="image/hotel3.jpg">
+        </div>
+        <div>
+            <img src="image/hotel4.jpg">
+        </div>
+        <div>
+            <img src="image/hotel5.jpg">
+        </div>
+    </div><!-- slider 終了 -->
+
+    <div class="text-wrapper">
+        <h1>現実離れした空間で心を癒しませんか？</h1>
+        <p>心も体もリフレッシュ。</p>
+        <p>大切な人と有意義な時間をお過ごしください</p>
+        <a class="button" href="room.html">お部屋を見る</a>
+    </div><!-- text-wrapper 終了 -->
+    
+    <section id="sns-container">
+        <h2>動画ギャラリー</h2>
+        <div class="video-wrapper">
+            <div class="video">
+                <p>ご案内動画</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZxmQwi9EfU?si=Y81_t1g4W-mHgohD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><!-- video 終了-->
+
+            <div class="video">
+                <p>ウェディングも承ります</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8a5KY4wQFSY?si=FYdT4Gv13Fun_-ht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><!-- video 終了-->
+        </div><!-- video-wrapper 終了-->
+        
+    </section>    <!-- #sns-container 終了 -->
+
+</body>
+<!-- スライダー用 -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //１個目のslider
+        $(".slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade:true,
+            dots:true,  
+        });
+        
+      </script>
+    
+<footer>
+    <p><small>&copy;OCEAN RESORT HOTEL</small></p>
+</footer>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="オーシャンリゾートホテルの施設をご紹介。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【オーシャンリゾートホテル】レストランのご紹介</title>
+
+    <!-- CSS -->
+    <!-- ～リセット～ -->
+    <link rel="stylesheet" link="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+     rel="stylesheet"
+     type="text/css"
+     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+
+<!-- 共通部分 -->
+<body>
+    <header class="header-wrapper">
+        <a href="index.html">
+            <img class="logo" src="image/logo.png" alt="OCEAN RRESORT HOTEL">
+        </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホームへ</a></li>
+                    <li><a href="room.html">客室</a></li>
+                    <li><a href="restaurant.html">レストラン</a></li>
+                    <li><a href="contact.html">お問い合わせ・アクセス</a></li>
+                    <li><a href="reservation.html">ご予約はこちら</a></li>
+                </ul>
+             </nav> <!-- main-nav 終了 -->
+            
+    </header><!-- header-wrapper 終了-->
+
+    <!-- メインコンテンツ -->
+    <div class="text-wrapper">
+        <h1>レストランのご案内</h1>
+        <span class="sub">restaurant</span>
+        <p>ハワイに滞在しながらハワイの本格料理に加え、日本人好みの料理もご用意しております。</p>
+    </div>
+
+<div class="restaurant-img"><img src="image/restaurant.jpg" alt=""></div>
+
+<section class="text-wrapper">
+<h2>営業時間</h2>
+<p>6：30～22：30（最終入店 22：00）</p>
+<ul>
+    <li>旧館（1Ｆ）</li>
+    <li>新館（2Ｆ）</li>
+</ul>
+<h2>料金</h2>
+<p>大人 2,200円</p>
+<p>5～12歳 1,200円</p>
+<p>4歳以下 無料</p>
+
+<h2>メニュー一覧</h2>
+<div class="menu-wrapper">
+    <div>
+        <img src="image/menu1.jpg.jpg">
+        <p>ハワイ風トースト</p>
+    </div>
+    <div>
+        <img src="image/menu2.jpg.jpg">
+        <p>ロコモコ</p>
+    </div>
+    <div>
+        <img src="image/menu3.jpg.jpg">
+        <p>トースト</p>
+    </div>
+    <div>
+        <img src="image/menu4.jpg.jpg">
+        <p>サンドイッチ</p>
+    </div>
+    <div>
+        <img src="image/menu5.jpg.jpg">
+        <p>グリルステーキ</p>
+    </div>
+    <div>
+        <img src="image/menu6.jpg.jpg">
+        <p>ピザ</p>
+    </div>
+</div><!-- menu-wrapper 終了 -->
+
+</section>        
+    
+<footer>
+    <p><small>&copy;OCEAN RESORT HOTEL</small></p>
+</footer>
+
+</body>
+<!-- スライダー用 -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //１個目のslider
+        $(".slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade:true,
+            dots:true,  
+        });
+        
+      </script>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="オーシャンリゾートホテルの施設をご紹介。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【オーシャンリゾートホテル】お問い合わせ・アクセス</title>
+
+    <!-- CSS -->
+    <!-- ～リセット～ -->
+    <link rel="stylesheet" link="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap" rel="stylesheet">
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- スライダー -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+     rel="stylesheet"
+     type="text/css"
+     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+
+<!-- 共通部分 -->
+<body>
+    <header class="header-wrapper">
+        <a href="index.html">
+            <img class="logo" src="image/logo.png" alt="OCEAN RRESORT HOTEL">
+        </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホームへ</a></li>
+                    <li><a href="room.html">客室</a></li>
+                    <li><a href="restaurant.html">レストラン</a></li>
+                    <li><a href="contact.html">お問い合わせ・アクセス</a></li>
+                    <li><a href="reservation.html">ご予約はこちら</a></li>
+                </ul>
+             </nav> <!-- main-nav 終了 -->
+            
+    </header><!-- header-wrapper 終了-->
+
+    <!-- メインコンテンツ -->
+    <div class="text-wrapper">
+        <h1>お問い合わせフォーム</h1>
+        <span class="sub">Contact</span>
+    </div>
+    
+    <div class="contact-wrapper">
+        <form action="#">
+            <div>
+                <label for="name">氏名</label>
+                <input type="text" id="name" name="your-name">
+            </div>
+            <div>
+                <label for="Furigana">フリガナ</label>
+                <input type="Furigana" id="Furigana" name="your-Furigana">
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="your-email">
+            </div>
+            <div>
+                <label for="tel">電話番号</label>
+                <input type="tel" id="tel" name="your-tel">
+            </div>
+            <div>
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" name="your-message" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+            </div>
+            <div class="contact-button">
+                <input type="submit" class="button" value="送信する">
+            </div>
+        </form>
+    </div><!-- contact-wrapper -->
+
+
+
+    <div class="text-wrapper">
+        <h1>アクセス</h1>
+        <span class="sub">Access</span>
+    </div>
+
+    <section class="location-wrapper">
+        <div class="class="location-wrapper>
+            <h3 class="sub">OCEAN RESORT HOTEL：連絡先</h3>
+            <p>
+                住所：1234 ◯◯通り, <br>
+                ホノルル, ハワイ アメリカ合衆国<br>
+                電話番号：123-456-7890
+            </p>
+         </div>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.3785836552383!2d-157.8322497386638!3d21.276729984427874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00727593d8afcb%3A0xb9789258e42af5c8!2z44Ot44Kk44Ok44OrIOODj-ODr-OCpOOCouODsyDjg5vjg4bjg6s!5e0!3m2!1sja!2sjp!4v1701083663144!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section> <!-- location-wrapper 終了 -->
+   
+
+   
+    
+<footer>
+    <p><small>&copy;OCEAN RESORT HOTEL</small></p>
+</footer>
+
+</body>
+<!-- スライダー用 -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //１個目のslider
+        $(".slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade:true,
+            dots:true,  
+        });
+        
+      </script>
